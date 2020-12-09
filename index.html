@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+     Michael Whalen
+     Michael_Whalen@student.uml.edu
+     Michael Whalen Computer Science Student in 91.61 GUI Programming I Umass Lowell
+     12/5/20
+     Scrabble program using drag and drop.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scrabble Homework 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Michael Whalen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="myScrabbleStyle.css">
+  </head>
+
+<body>
+  <div id="Score_container"> <!-- container for styling score and buttons -->
+  <h2 id="total_score_header">Total Score:</h2> <!-- total score updates when user submits word -->
+  <h3 id="current_score_header"> Word Score:</h3> <!-- keeps track of current word score -->
+  <button onclick="reset_hand()">Submit Word!</button> <!-- calls function that submits word and keeps track of score and generate new tiles -->
+  <button onclick="restart_game()">Reset Game</button> <!-- resets game -->
+  </div>
+
+
+  <!--<div id="draggable1" class="ui-widget-content">
+     <img src="tiles/Scrabble_Tile_A.jpg" alt="Tile A" width=100px height=100px>
+  </div>
+
+  <div id="draggable2" class="ui-widget-content">
+  <img src="tiles/Scrabble_Tile_B.jpg" alt="Tile B" width=100px height=100px>
+  </div>
+
+  <div id="draggable3" class="ui-widget-content">
+    <img src="tiles/Scrabble_Tile_C.jpg" alt="Tile C" width=100px height=100px>
+  </div>-->
+   <div id="board_container" class="ui-widget-header"> <!-- one line board that contains individual spots on board -->
+     <div id="spot1"> <!-- each div identifies a individual spot on board -->
+     </div>
+     <div id="spot2">
+     </div>
+     <div id="spot3">
+     </div>
+     <div id="spot4">
+     </div>
+     <div id="spot5">
+     </div>
+     <div id="spot6">
+     </div>
+     <div id="spot7">
+     </div>
+   </div>
+
+   <div id="droppable_rack" > <!-- my rack that holds tiles -->
+   <img src="scrabble-tile-holder.png" alt="Tile Rack" width=800px; height= 100px;>
+ </div>
+
+<!-- Jquery/ jquery UI scripts -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- My js file -->
+<script src="myScrabbleScript.js"></script>
+</body>
+</html>

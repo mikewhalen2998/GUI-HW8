@@ -1,0 +1,65 @@
+/*   Michael Whalen
+     Michael_Whalen@student.uml.edu
+     Michael Whalen Computer Science Student in 91.61 GUI Programming I UMASS Lowell
+     12/5/20
+     Styling for assignment 8
+*/
+
+/* rack styling */
+#droppable_rack{
+  display: block;
+  clear:both;
+  width: 800px;
+  height:80px;
+  padding-top:5px;
+  padding-left:5px;
+  margin-bottom:40px;
+  text-align:left;
+  margin-bottom:40px;
+  position:absolute;
+}
+
+/* board styling */
+#board_container{
+background-image: url("Scrabble_Board_oneline.png");
+background-size:800px 110px;
+background-repeat:no-repeat;
+display:block;
+clear:left;
+width: 800px;
+height:110px;
+text-align:left;
+}
+
+/* board spot styling */
+#spot1, #spot2, #spot3, #spot4, #spot5, #spot6, #spot7{
+display:inline-block;
+width: 110px;
+height:110px;
+}
+
+
+/* Created tiles class styling */
+.generated_tiles{
+display: inline-block;
+width: 100px;
+height:100px;
+padding:0px;
+border: none;
+float:left;
+position:relative;
+}
+
+/* Div that contains current and total score styling */
+#Score_container{
+background-color: grey;
+width:800px;
+height:100px;
+padding-bottom:20px;
+text-align:left;
+
+}
+/* background color for page */
+body{
+  background-color:lightblue;
+}
